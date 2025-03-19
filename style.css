@@ -1,0 +1,52 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.hero {
+    background: url('https://source.unsplash.com/1600x900/?workspace,developer') center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px; /* Dikurangi dari 150px agar lebih ringkas */
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.hero .container {
+    position: relative;
+    z-index: 1;
+}
+
+.about-img {
+    width: 150px; /* Dikurangi ukurannya agar lebih kecil */
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.project-card {
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+.skills {
+    background: #f8f9fa;
+    padding: 50px 0;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: auto;
+}
